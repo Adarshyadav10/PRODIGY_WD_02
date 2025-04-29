@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background : linear-gradient(to right, #83a4d4, #b6fbff);
+  }
+  body {
+    padding-top: 70px; 
+}
+
+  /* Animation keyframes */
+@keyframes slideFadeDown {
+  0% {
+      opacity: 0;
+      transform: translateY(-30px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Apply animation to navbar */
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 1.5em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  /* Animation properties */
+  animation: slideFadeDown 1s ease-out;
+}
+
+  .container {
+    background: #e7d8e5;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+  
+  #display {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 20px 0 30px;
+    color: #333;
+  }
+  
+  .buttons button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 6px;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+.buttons button:hover:not(:disabled) {
+    background-color: #0056b3;
+  }
+  
+.buttons button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+#laps {
+    list-style: none;
+    margin-top: 30px;
+    max-height: 200px;
+    overflow-y: auto;
+    text-align: left;
+    padding: 0 10px;
+  }
+  
+  #laps li {
+    padding: 10px;
+  border-bottom: 1px solid #eee;
+  font-size: 1em;
+  color: #333;
+  }
+  
